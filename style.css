@@ -89,18 +89,11 @@
   vertical-align: middle;
   color: #1d1d1f;
 }
-.section1 {
-  width: 100%;
-  border-bottom-width: 12px;
-  gap: 12px;
-  display: flex;
-  flex-direction: column;
-  height: 1546px;
-}
 .poster{
 width: 100%;
 height: 500px;
 background-position: center;
+margin-top:  12px;
 }
 .pro1{
   background-image:url(./images/pro1.jpg);
@@ -117,7 +110,6 @@ flex-direction: column;
 }
 .innerUp1{
   width: 100%;
-  height: 62px;
   gap:4px;
   position: relative;
   display: flex;
@@ -137,13 +129,31 @@ flex-direction: column;
 }
 .innerHello-1{
   width: 100%;
-  height: 22px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 120%;
   color: #F5F5F7;
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+.innerPodUp-1{
+  width: 100%;
+  height: 36px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color:#F5F5F7 ;
+  display: flex;
+  justify-content: center;
+}
+.innerPod-1{
+  width: 100%;
+  font-size: 18px;
+  line-height: 120%;
+  color: #F5F5F7;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 /*/////////////////learn more/////////////////////*/
 .innerDown1{
@@ -183,6 +193,39 @@ flex-direction: column;
     line-height: 20px;
   }
   .border1:hover {
+    background-color: #1385f8;
+    border: #1385f8 1px solid;
+    color: white;
+  }
+  .fullStill {
+    width: 107px;
+    height: 36px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0071e3;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .fullStill:hover {
+    background-color: #1385f8;
+  }
+  .borderStill {
+    width: 66px;
+    height: 36px;
+    border-radius: 999px;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2997ff;
+    color: #2997ff;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .borderStill:hover {
     background-color: #1385f8;
     border: #1385f8 1px solid;
     color: white;
@@ -248,11 +291,70 @@ flex-direction: column;
       background-clip: text;
       color: transparent;
     }
-
-@media screen and (min-width:480px)and (max-width:1023px){
-  .section1{
-    height: 1974px;
+  .pod{
+    background-image: url(./images/airpod1.jpg);  
+    display: flex;
+    justify-content: center;
   }
+  .podText{
+    height: 147px;
+    width: 241px;
+    position: relative;
+    top: 299px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .watch{
+    background-image: url(./images/watch1.jpg);
+  }
+  .watchText{
+    width: 100%;
+    /* height: 135px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 46px;
+    gap: 8px;
+  }
+  .h1{
+    height: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .series{
+    height: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 4px;
+
+  }
+  .color{
+    color: #000000;
+    position: relative;
+    bottom: 6px;
+  }
+  .row{
+    display: flex;
+    width: 152px;
+    height: 34px;
+    gap: 12px;
+  }
+  .macAir{
+    background-image: url(./images/macAir.jpg);
+  }
+  .business{
+    background-image: url(./images/business1.png);
+  }
+@media screen and (min-width:480px)and (max-width:1023px){
   .pro1{
   background-image:url(./images/pro2.jpg);
   height: 650px;
@@ -266,7 +368,7 @@ flex-direction: column;
     height: 139px;
   }
   .innerUp1{
-    height: 96px;
+    /* height: 96px; */
     gap: 4px;
   }
   .inner16-1{
@@ -319,6 +421,15 @@ flex-direction: column;
     height: 24px;
     line-height: 24px;
   }
+  /* .posterGrid{
+    display: grid;
+    height: 490px;
+    gap: 12px;
+    padding: 12px;
+    position: relative;
+    justify-content: space-evenly;
+    grid-template-columns: 50% 50%;
+  } */
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -359,9 +470,6 @@ flex-direction: column;
   }
   .line3 {
     display: none;
-  }
-  .section1{
-    height: 4880px;
   }
   .pro1{
   background-image:url(./images/pro3.jpg);
