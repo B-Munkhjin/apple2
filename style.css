@@ -294,6 +294,7 @@
   background-image: url(./images/airpod1.jpg);
   display: flex;
   justify-content: center;
+  background-size: cover;
 }
 .podText {
   height: 147px;
@@ -307,6 +308,7 @@
 }
 .watch {
   background-image: url(./images/watch1.jpg);
+  background-size: cover;
 }
 .watchText {
   width: 100%;
@@ -371,6 +373,7 @@
 }
 .trade {
   background-image: url(./images/trade.jpg);
+  background-size: cover;
 }
 .fullGet1 {
   width: 150px;
@@ -378,7 +381,10 @@
 .hidden2 {
   display: none;
 }
-@media screen and (min-width: 480px) and (max-width: 1023px) {
+.hidden3{
+    display: none;
+  }
+@media screen and (min-width: 655px) {
   .pro1 {
     background-image: url(./images/pro2.jpg);
     height: 650px;
@@ -386,7 +392,6 @@
   .text-p {
     height: 156px;
     top: 58px;
-    gap: 16px;
   }
   .airH {
     height: 139px;
@@ -434,9 +439,9 @@
     display: flex;
     flex-direction: column;
   }
-  .innerUpGAP {
+  /* .innerUpGAP {
     gap: 8px;
-  }
+  } */
   .colorful {
     font-size: 20px;
     top: 422px;
@@ -455,8 +460,23 @@
     justify-content: space-evenly;
     grid-template-columns: 50% 50%;
   } */
+  .grid2{
+     display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+    width: 100%;
+    column-gap: 12px;
+  }
+  .poster-mid{
+    margin-top: 12px;
+    height: 490px;
+    display: flex;
+  }
+  .hidden3{
+    display: none;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .header {
     height: 44px;
     gap: 24px;
@@ -503,10 +523,9 @@
   .text-p {
     top: 55px;
     height: 172px;
-    gap: 20px;
+    gap: 4px;
   }
   .innerUp1 {
-    height: 108px;
     gap: 16px;
   }
   .inner16-1 {
@@ -524,7 +543,6 @@
   }
   .innerDown1 {
     height: 44px;
-    gap: 16px;
     position: relative;
     top: 7px;
   }
@@ -605,7 +623,6 @@
   }
   .hidden2 {
     background-image: url(./images/webPod.jpg);
-    width: 50%;
     height: 580px;
     display: flex;
     justify-content: center;
@@ -613,15 +630,11 @@
     margin-top: 12px;
   }
   .hidTEXT {
-    width: 370px;
     height: 115px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     position: relative;
     top: 401px;
     color: #f5f5f7;
-    align-items: center;
   }
   .upAIR {
     font-weight: 600;
@@ -646,5 +659,85 @@
     gap: 16px;
     position: relative;
     top: 5px;
+  }
+  .grid1{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 580px;
+    gap: 12px;
+  }
+  .tab{
+    height: 580px;
+    background-image: url(./images/tab3.jpg);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .colorful{
+    top: 390px;
+    font-size: 18px;
+  }
+  .innerPod-1{
+    font-size: 18px;
+  }
+  .airH{
+    top: 58px;
+  }
+  .innerUpGAP{
+    gap: 8px;
+  }
+  .gap4px{
+    gap: 4px;
+  }
+  .business{
+    display: none;
+  }
+  .deals{
+    display: none;
+  }
+  .pod{
+    display: none;
+  }
+  .trade{
+    display: flex;
+    background-size: cover;
+  }
+  .watch{
+    background-image: url(./images/watchWeb.jpg);
+  }
+  .macAir{
+    background-image: url(./images/webAir.jpg);
+  }
+  .trade{
+    background-image: url(./images/webTrade.jpg);
+    margin-top: 0px;
+  }
+  .grid2{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    gap: 12px;
+    margin-top: 12px;
+
+  }
+  .poster-mid{
+    height: 580px;
+  }
+  .fullGet1{
+    width: 167px;
+    height: 40px;
+  }
+  .hidden3{
+   background-image: url(./images/card.jpg);
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    background-position: center; 
+  }
+  .apply{
+    width: 112px;
+    height: 40px;
+  }
+  .lastPosterMid{
+    width: 250px;
   }
 }
