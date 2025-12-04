@@ -381,9 +381,95 @@
 .hidden2 {
   display: none;
 }
-.hidden3{
-    display: none;
+.hidden3 {
+  display: none;
+}
+.scroll {
+  width: 100%;
+  height: 533px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.scrollmenu {
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  /* width: fit-content; */
+  gap: 16px;
+  /* animation: firstAnimation 40s linear infinite; */
+  scroll-snap-align: start;
+}
+/* @keyframes firstAnimation {
+  0% {
+    transform: translateX(0%);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+.scrollmenu > div {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 274px;
+  height: 495px;
+}
+.movie1 {
+  background-image: url(./images/movie1.jpg);
+}
+.movie2 {
+  background-image: url(./images/movie2.jpg);
+}
+.movie3 {
+  background-image: url(./images/movie3.jpg);
+}
+.movie4 {
+  background-image: url(./images/movie4.jpg);
+}
+.movie5 {
+  background-image: url(./images/movie5.jpg);
+}
+.movie6 {
+  background-image: url(./images/movie6.jpg);
+}
+.movie7 {
+  background-image: url(./images/movie7.jpg);
+}
+.movie8 {
+  background-image: url(./images/movie8.jpg);
+}
+.circle {
+  width: 100%;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.tiny {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #000000;
+  opacity: 42%;
+  display: flex;
+  position: relative;
+}
+.tiny:hover {
+  background-color: #000000;
+  opacity: 60%;
+}
+.movie9 {
+  display: none;
+}
+.movie10 {
+  display: none;
+}
+.tinyTab {
+  display: none;
+}
 @media screen and (min-width: 655px) {
   .pro1 {
     background-image: url(./images/pro2.jpg);
@@ -460,20 +546,58 @@
     justify-content: space-evenly;
     grid-template-columns: 50% 50%;
   } */
-  .grid2{
-     display: grid;
+  .grid2 {
+    display: grid;
     grid-template-columns: auto auto;
     height: fit-content;
     width: 100%;
     column-gap: 12px;
   }
-  .poster-mid{
+  .poster-mid {
     margin-top: 12px;
     height: 490px;
     display: flex;
   }
-  .hidden3{
+  .hidden3 {
     display: none;
+  }
+
+  .movie1 {
+    background-image: url(./images/tabMovie1.jpg);
+  }
+  .movie2 {
+    background-image: url(./images/tabMovie2.jpg);
+  }
+  .movie3 {
+    background-image: url(./images/tabMovie3.jpg);
+  }
+  .movie4 {
+    background-image: url(./images/tabMovie4.jpg);
+  }
+  .movie5 {
+    background-image: url(./images/tabMovie5.jpg);
+  }
+  .movie6 {
+    background-image: url(./images/tabMovie6.jpg);
+  }
+  .movie7 {
+    background-image: url(./images/tabMovie7.jpg);
+  }
+  .movie8 {
+    background-image: url(./images/tabMovie8.jpg);
+  }
+  .movie9 {
+    background-image: url(./images/tabMovie9.jpg);
+  }
+  .movie10 {
+    background-image: url(./images/tabMovie10.jpg);
+  }
+  .scroll {
+    height: 406px;
+  }
+  .scrollmenu > div {
+    width: 689px;
+    height: 368px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -660,84 +784,83 @@
     position: relative;
     top: 5px;
   }
-  .grid1{
+  .grid1 {
     display: grid;
     grid-template-columns: auto auto;
     height: 580px;
     gap: 12px;
   }
-  .tab{
+  .tab {
     height: 580px;
     background-image: url(./images/tab3.jpg);
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-  .colorful{
+  .colorful {
     top: 390px;
     font-size: 18px;
   }
-  .innerPod-1{
+  .innerPod-1 {
     font-size: 18px;
   }
-  .airH{
+  .airH {
     top: 58px;
   }
-  .innerUpGAP{
+  .innerUpGAP {
     gap: 8px;
   }
-  .gap4px{
+  .gap4px {
     gap: 4px;
   }
-  .business{
+  .business {
     display: none;
   }
-  .deals{
+  .deals {
     display: none;
   }
-  .pod{
+  .pod {
     display: none;
   }
-  .trade{
+  .trade {
     display: flex;
     background-size: cover;
   }
-  .watch{
+  .watch {
     background-image: url(./images/watchWeb.jpg);
   }
-  .macAir{
+  .macAir {
     background-image: url(./images/webAir.jpg);
   }
-  .trade{
+  .trade {
     background-image: url(./images/webTrade.jpg);
     margin-top: 0px;
   }
-  .grid2{
-    display:grid;
+  .grid2 {
+    display: grid;
     grid-template-columns: 50% 50%;
     gap: 12px;
     margin-top: 12px;
-
   }
-  .poster-mid{
+  .poster-mid {
     height: 580px;
   }
-  .fullGet1{
+  .fullGet1 {
     width: 167px;
     height: 40px;
   }
-  .hidden3{
-   background-image: url(./images/card.jpg);
+  .hidden3 {
+    background-image: url(./images/card.jpg);
     height: 580px;
     display: flex;
     justify-content: center;
-    background-position: center; 
+    background-position: center;
   }
-  .apply{
+  .apply {
     width: 112px;
     height: 40px;
   }
-  .lastPosterMid{
+  .lastPosterMid {
     width: 250px;
   }
 }
