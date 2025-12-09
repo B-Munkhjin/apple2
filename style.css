@@ -386,16 +386,17 @@
 }
 .scroll {
   width: 100%;
-  height: 533px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  justify-content: center;
+  position: relative;
+  gap: 8px;
+  bottom: 16px;
   overflow-x: hidden;
 }
 .scrollmenu {
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   /* width: fit-content; */
@@ -470,6 +471,81 @@
 .tinyTab {
   display: none;
 }
+.drama{
+  display: none;
+}
+.animation{
+  width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.wanimation {
+    width: 980px;
+    height: 160px;
+    animation: wanimation 7s  infinite linear ;
+    display: flex;
+    gap: 7px;
+  }
+  .box{
+    width: 238px;
+height: 134px;
+background-color: #6529CF;
+display: flex;
+flex-direction: column;
+  }
+  .boxin{
+    width: 238px;
+height: 160px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+  }
+  .la{
+    width: 114px;
+height: 114px;
+top: 10px;
+left: 62px;
+border-radius: 8px;
+position: relative;
+  }
+  .lapple{
+    width: 41px;
+height: 9.67px;
+left: 187px;
+position: relative;
+  }
+  .textla{
+    width: 55px;
+height: 16px;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+color: #1D1D1F;
+  }
+  .travel{
+    background-image: url(./images/travel.jpg);
+    width: 238px;
+    height: 134px;
+  }
+  .texttravel{
+    width: 159px;
+    height: 16px;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+color: #1D1D1F;
+
+  }
+  @keyframes wanimation {
+    from{
+      transform: translateX(0%);
+    }to{
+      transform: translateX(-50%);
+    }
+  }
 @media screen and (min-width: 655px) {
   .pro1 {
     background-image: url(./images/pro2.jpg);
@@ -587,17 +663,67 @@
     background-image: url(./images/tabMovie8.jpg);
   }
   .movie9 {
+    display: flex;
     background-image: url(./images/tabMovie9.jpg);
   }
   .movie10 {
+    display: flex;
     background-image: url(./images/tabMovie10.jpg);
   }
-  .scroll {
+  /* .scroll {
     height: 406px;
-  }
+  } */
   .scrollmenu > div {
     width: 689px;
     height: 368px;
+  }
+  .tinyTab {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #000000;
+  opacity: 42%;
+  display: flex;
+  position: relative;
+}
+.tinyTab:hover {
+  background-color: #000000;
+  opacity: 60%;
+}
+  .drama{
+    display: flex;
+    gap: 16px;
+    top: 305px;
+    left: 30px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .drama-text{
+    width: 401px;
+    height: fit-content;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color:#FFFFFF ;
+  }
+  .span{
+    font-weight: 700;
+  }
+  .box{
+    display: none;
+  }
+  .travel{
+    display: none;
+  }
+  .texttravel{
+    display: none;
+  }
+  .textla{
+    display: none;
+  }
+  .boxin{
+    background-image: url(./images/fitness1.jpg);
   }
 }
 @media screen and (min-width: 1000px) {
@@ -862,5 +988,17 @@
   }
   .lastPosterMid {
     width: 250px;
+  }
+  .box{
+    display: none;
+  }
+  .travel{
+    display: none;
+  }
+  .texttravel{
+    display: none;
+  }
+  .textla{
+    display: none;
   }
 }
