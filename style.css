@@ -404,14 +404,6 @@
   /* animation: firstAnimation 40s linear infinite; */
   scroll-snap-align: start;
 }
-/* @keyframes firstAnimation {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-} */
 .scrollmenu > div {
   flex: 0 0 auto;
   scroll-snap-align: center;
@@ -485,7 +477,7 @@
 .wanimation {
     width: 980px;
     height: 160px;
-    animation: wanimation 7s  infinite linear ;
+    animation: wanimation 16s  infinite linear ;
     display: flex;
     gap: 7px;
   }
@@ -545,6 +537,13 @@ color: #1D1D1F;
     }to{
       transform: translateX(-50%);
     }
+  }
+  .play {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    margin: 16px;
+    left: 89%
   }
 @media screen and (min-width: 655px) {
   .pro1 {
@@ -613,15 +612,6 @@ color: #1D1D1F;
   .hidden2 {
     display: none;
   }
-  /* .posterGrid{
-    display: grid;
-    height: 490px;
-    gap: 12px;
-    padding: 12px;
-    position: relative;
-    justify-content: space-evenly;
-    grid-template-columns: 50% 50%;
-  } */
   .grid2 {
     display: grid;
     grid-template-columns: auto auto;
@@ -713,19 +703,76 @@ color: #1D1D1F;
   .box{
     display: none;
   }
-  .travel{
-    display: none;
-  }
-  .texttravel{
-    display: none;
-  }
   .textla{
     display: none;
   }
   .boxin{
+    display: none;
+  }
+.wanimation{
+  width: fit-content;
+  height: fit-content;
+}
+  .sizeLast{
+    height: 236px;
+    width: 417px;
+  }
+  .fitness1{
     background-image: url(./images/fitness1.jpg);
   }
+  .leftText{
+    width: 224px;
+height: 18px;
+top: 198px;
+position: relative;
+left: 15px;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+color: #FFFFFF;
+  }
+  .rB{
+    background-color: #1B2632;
+    display: flex;
+    flex-direction: column;
+  }
+  .zurag{
+    width: 196px;
+height: 196px;
+position: relative;
+top: 20px;
+left: 15px;
+border-radius: 8px;
+  }
+  .rbNow{
+    position: relative;
+bottom: 86px;
+left: 226px;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
+color: #FFFFFF
+  }
+  .logo{
+  position: relative;
+  top: 184px;
+  left: 320px;
+  height: 14px;
+  width: fit-content;
 }
+.logo2{
+  top: -14px;
+}
+.nba{
+  background-image: url(./images/sport.jpg);
+}
+.fitness2{
+  background-image: url(./images/fitness.jpg);
+}
+.play{
+  left: 94%;
+}
+} 
 @media screen and (min-width: 1000px) {
   .header {
     height: 44px;
@@ -992,13 +1039,14 @@ color: #1D1D1F;
   .box{
     display: none;
   }
-  .travel{
-    display: none;
-  }
-  .texttravel{
-    display: none;
-  }
   .textla{
     display: none;
+  }
+  .boxin{
+    display: none;
+  }
+  
+  .play{
+    left: 97%;
   }
 }
